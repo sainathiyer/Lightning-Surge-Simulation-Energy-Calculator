@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Calculator</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <h1>Energy Calculator</h1>
+  <br>
+  <img src="Pic1.JPG" width="600" height="90" class="center" />
+  <div>
+    <br>
+    Peak Voltage (V) = <input type="text" id="voltage">
+    <br>
+    <br>
+    Resistance (Ω) = <input type="text" id="resistance">
+    <br>
+    <br>
+    T1: Time to Peak Voltage (μs) = <input type="text" id="t1">
+    <br>
+    <br>
+    T2: Time to 50% of Voltage (μs) = <input type="text" id="t2">
+    <br>
+    <br>
+    <button id="calcTau">Calculate Tau</button>
+    <h2 id="calcTauRes">Tau (in μs)</h2>
+    <br>
+    <button id="calcEnergy">Calculate Energy</button>
+    <h2 id="calcEnergyRes">Energy (in W·s or J)</h2>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
